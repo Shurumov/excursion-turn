@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Запись на экскурсии</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css" inline>
+
+</head>
+
+<body>
+
+	<header class="logo"><img src="img/logo.png" alt=""></header>
+
+	<form id="excursion">
+		<p id="p1">Дорогие участники Форума! У вас есть уникальная возможность  попасть на  Чемпионат России по прыжкам на лыжах с трамплина. Специально для вас организована экскурсия в Красную поляну. В программу  входит экскурсия по трамплинному комплексу "Русские горки" и участие в фан-клубе соревнований.</p>
+		<p id="p2">Запись на экскурсию по желанию. Регистрация участников завершается после того, как в группе наберется 45 человек.</p>
+		<div class="welcome" hidden>Вы записались в списки участников</div>
+		<div class="group-inputs">
+			<div class="group">
+				<input type="radio" id="excursion1" name="excursion" value="1-ая группа - 6 октября выезд в 14.00, возвращение в 18.00"
+				 onchange="activateButton()">
+				 <span class="radio-custom"></span>
+				<label for="excursion1">1-ая группа - 6 октября выезд в 14.00, возвращение в 18.00</label>
+			</div>
+			<div class="group">
+				<input type="radio" id="excursion2" name="excursion" value="2-ая группа - 7 октября выезд в 13.00, возвращение в 17.00"
+				 onchange="activateButton()">
+				 <span class="radio-custom"></span>
+				<label for="excursion2">2-ая группа - 7 октября выезд в 13.00, возвращение в 17.00</label>
+			</div>
+			<div class="group">
+				</span><input type="radio" id="excursion3" name="excursion" value="3-я группа  - 7 октября выезд в 14.00, возвращение в 19.00"
+				 onchange="activateButton()">
+				 <span class="radio-custom"></span>
+				<label for="excursion3">3-я группа - 7 октября выезд в 14.00, возвращение в 19.00</label>
+			</div>
+		</div>
+
+		<div class="group">
+			<button type="submit" disabled>Записаться</button>
+		</div>
+	</form>
+
+
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>

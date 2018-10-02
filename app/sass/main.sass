@@ -1,0 +1,88 @@
+@import "libs"
+
+.logo
+	width: 100%
+	padding: 10px
+	background: linear-gradient(#2a56af,#3265b8,#4d98d6,#6dd5fa)
+	display: flex
+	justify-content: center
+	align-items: center
+	align-content: center
+	background-color: #2A56AF
+	img
+		display: block
+		margin: 0 auto
+		max-width: 200px
+
+#excursion
+	padding: 15px
+
+.welcome
+	margin: 0 auto
+	text-align: left
+	max-width: 400px
+	color: green
+	
+.group
+	display: flex
+	justify-content: flex-start
+	align-content: 
+	align-items: center
+	text-align: center
+	margin-top: 15px
+	&-inputs
+		text-align: left
+		max-width: 800px
+		margin: 15px auto 0
+
+
+#select-group
+	padding: 5px
+	width: 400px
+	border-radius: 5px
+
+button
+	width: 100%
+	display: block
+	margin: 10px auto 0
+	padding: 10px 15px
+	border: 0
+	background-color: #FF794A
+	color: #fff
+	text-align: center
+	border-radius: 5px
+	cursor: pointer
+
+button:disabled
+	background-color: #afafaf
+
+input
+	display: none
+
+.radio-custom 
+	margin-right: 13px
+	width: 20px
+	min-width: 20px
+	height: 20px
+	border: 2px solid #ccc
+	border-radius: 50%
+	position: relative
+	
+
+.radio-custom, label 
+	display: inline-block
+	vertical-align: middle
+	margin-bottom: 0
+	text-align: left
+
+input:checked + .radio-custom::before 
+	content: ""
+	display: block
+	position: absolute
+	top: 3px
+	right: 3px
+	bottom: 3px
+	left: 3px
+	background: #FF794A
+	border-radius: 50%
+
